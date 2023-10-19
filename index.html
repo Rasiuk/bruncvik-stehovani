@@ -6,6 +6,18 @@
     <title>Stěhování Autodoprava Bruncvík</title>
     <link
       rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link type="image/x-icon" href="/img/logistics.png" rel="shortcut icon" />
+    <link type="Image/x-icon" href="/img/logistics.png" rel="icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -16,9 +28,10 @@
     <!-- Header  -->
     <header>
       <div class="header container">
-        <a href="./index.html"
-          ><img class="header__logo" src="" alt="Logo"
-        /></a>
+        <a class="logo header__logo" href="./index.html">
+          <img class="logo__img" src="./img/logistics.png" alt="logo" />
+        </a>
+
         <ul class="nav__menu">
           <li class="nav__menu__item">
             <a href="#O-nás"><h2>O nás</h2></a>
@@ -33,6 +46,11 @@
             <a href="#kontakty"><h2>Kontakty</h2></a>
           </li>
         </ul>
+        <button type="button" class="menu js-open-menu">
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -84,6 +102,7 @@
           přenecháte na nás. Zvolte si balíček stěhování bytů/ firem, který vám
           vyhovuje a spočítejte si cenu.
         </p>
+
         <ul class="price__list">
           <li>
             <h3>Minimum</h3>
@@ -115,7 +134,48 @@
           Zvolte si vlastní variantu stěhování, nebo jiných služeb a určitě se
           domluvíme na ceně.
         </h2>
-        <table>
+        <div class="price-block">
+          <ul class="price-list list">
+            <li class="price-item">
+              <span class="price-item-serv">1 stěhovák</span>
+              <span>250, -kč</span>
+            </li>
+            <li class="price-item">
+              <span class="price-item-serv">2 stěhovací</span>
+              <span>500, -kč</span>
+            </li>
+            <li class="price-item">
+              <span class="price-item-serv">3 stěhovací</span>
+              <span>750, -kč</span>
+            </li>
+            <li class="price-item">
+              <span class="price-item-serv">Půjčení auta (jednorázové)</span>
+              <span>500, -kč</span>
+            </li>
+          </ul>
+          <ul class="price-list list">
+            <li class="price-item">
+              <span class="price-item-serv">Dovoz/vyzvednutí krabic</span
+              ><span>500, -kč</span>
+            </li>
+            <li class="price-item">
+              <span class="price-item-serv"
+                >Likvidace nábytku a elektrospotřebičů</span
+              >
+              <span>od 1300, -kč</span>
+            </li>
+            <li class="price-item">
+              <span class="price-item-serv">Vyklízení nemovitosti</span>
+              <span>od 4000,- kč dle parametrů zakázky</span>
+            </li>
+            <li class="price-item">
+              <span class="price-item-serv">Těžká břemena</span>
+              <span>individuálně, dle parametrů zakázky</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <table>
           <caption>
             Hodinová sazba
           </caption>
@@ -159,7 +219,7 @@
               <td>individuálně, dle parametrů zakázky</td>
             </tr>
           </tbody>
-        </table>
+        </table> -->
         <p>Min. účtovací čas služeb - 2 hod Určuje se každá započata hodina</p>
         <p>
           Cena zakázky se může navýšit v případě podání mylných informací.
@@ -204,5 +264,28 @@
       </div>
     </footer>
     <!-- Mobile menu  -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu menu-toggle js-close-menu" type="button">
+        <svg class="menu__icon" width="40" height="40">
+          <use href="./img/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile__list">
+        <li class="mobile__item">
+          <a href="#O-nás"><h2>O nás</h2></a>
+        </li>
+        <li class="mobile__item">
+          <a href="#služby"><h2>Naše služby</h2></a>
+        </li>
+        <li class="mobile__item">
+          <a href="#ceny"><h2>Ceny</h2></a>
+        </li>
+        <li class="mobile__item">
+          <a href="#kontakty"><h2>Kontakty</h2></a>
+        </li>
+      </ul>
+    </div>
+    <script src="/js/mobile-menu.js"></script>
+    <script src="/js/header-scroll.js"></script>
   </body>
 </html>

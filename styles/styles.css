@@ -11,6 +11,10 @@ ul {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -195,7 +199,7 @@ a {
 .hero {
   padding-top: 180px;
   padding-bottom: 180px;
-  background-image: url("/img/background-hero.jpg");
+  background-image: url("../img/background-hero.jpg");
   background-position: center;
 }
 

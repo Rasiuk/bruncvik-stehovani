@@ -4,3 +4,22 @@
   background-image: url("../img/background-hero.jpg");
   background-position: center;
 }
+.hero__content {
+  max-width: 448px;
+  margin-left: 20px;
+}
+.hero__title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.64px;
+  margin-bottom: 8px;
+}
+.hero__uppertitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}

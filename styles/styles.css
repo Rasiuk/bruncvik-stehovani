@@ -33,6 +33,7 @@ a {
 }
 
 .container {
+  padding-top: 80px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -67,6 +68,10 @@ a {
   transition: backdrop-filter 400ms ease-in, background-color 400ms ease-in;
   transition: backdrop-filter 400ms ease-in, background-color 400ms ease-in, -webkit-backdrop-filter 400ms ease-in;
 }
+.header__logo {
+  margin-left: 20px;
+}
+
 .header.no-transparency {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -203,6 +208,28 @@ a {
   background-position: center;
 }
 
+.hero__content {
+  max-width: 448px;
+  margin-left: 20px;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.64px;
+  margin-bottom: 8px;
+}
+
+.hero__uppertitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     display: none;
@@ -254,7 +281,9 @@ a {
   z-index: 1000;
   transform: translateX(100%);
   transition: transform 250ms linear;
-  background-color: #fff;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(243, 197, 161, 0.6);
 }
 .menu-container.is-open {
   transform: translateX(0);

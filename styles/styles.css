@@ -64,18 +64,15 @@ a {
   top: 0px;
   z-index: 99;
   margin: 0;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(243, 197, 161, 0.6);
   transition: background-color 400ms ease-in, -webkit-backdrop-filter 400ms ease-in;
   transition: backdrop-filter 400ms ease-in, background-color 400ms ease-in;
   transition: backdrop-filter 400ms ease-in, background-color 400ms ease-in, -webkit-backdrop-filter 400ms ease-in;
 }
 .header__logo {
   margin-left: 20px;
-}
-
-.header.no-transparency {
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  background-color: rgba(243, 197, 161, 0.6);
 }
 
 .nav__menu {
@@ -119,7 +116,7 @@ a {
 @media screen and (max-width: 1199px) {
   .price-block {
     padding: 32px 40px;
-    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    background-image: linear-gradient(180deg, #171a24 0%, rgb(243, 197, 161) 100%);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -228,6 +225,18 @@ a {
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.16px;
+  margin-bottom: 64px;
+}
+
+.hero__link {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: rgb(243, 197, 161);
 }
 
 @media screen and (max-width: 767px) {
@@ -301,4 +310,12 @@ a {
 }
 .mobile__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4; /* 56px */
+  letter-spacing: 0.4px;
 }/*# sourceMappingURL=styles.css.map */

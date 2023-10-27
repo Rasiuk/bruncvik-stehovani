@@ -1,4 +1,6 @@
 .header {
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -19,8 +21,16 @@
 
 .nav__menu {
   display: flex;
+  gap: 32px;
 }
 .logo__img {
   width: 60px;
   height: 60px;
+}
+.nav__menu__link {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.18px;
 }

@@ -22,7 +22,6 @@
       mobileMenu.classList.remove("is-open");
     });
   });
-  console.log(mobileLink);
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
     if (!e.matches) return;

@@ -1,3 +1,12 @@
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4; /* 56px */
+  letter-spacing: 0.4px;
+}
+
 h1,
 h2,
 h3,
@@ -56,6 +65,8 @@ a {
 }
 
 .header {
+  padding-left: 15px;
+  padding-right: 15px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -77,11 +88,20 @@ a {
 
 .nav__menu {
   display: flex;
+  gap: 32px;
 }
 
 .logo__img {
   width: 60px;
   height: 60px;
+}
+
+.nav__menu__link {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.18px;
 }
 
 .price {
@@ -206,11 +226,11 @@ a {
 }
 
 .hero__content {
-  max-width: 448px;
-  margin-left: 20px;
+  padding: 0px 20px 0px 20px;
 }
 
 .hero__title {
+  max-width: 300px;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -233,7 +253,7 @@ a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  max-width: 300px;
   padding: 32px;
   border-radius: 8px;
   background-color: rgb(243, 197, 161);
@@ -310,12 +330,4 @@ a {
 }
 .mobile__item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.title {
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.4; /* 56px */
-  letter-spacing: 0.4px;
 }/*# sourceMappingURL=styles.css.map */

@@ -337,6 +337,7 @@ a {
   .reference__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
 }
@@ -350,6 +351,11 @@ a {
 @media screen and (min-width: 768px) {
   .reference__item {
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .reference__item {
+    width: calc((100% - 30px) / 5);
   }
 }
 @media screen and (max-width: 768px) {

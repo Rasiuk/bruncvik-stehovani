@@ -1,0 +1,42 @@
+.reference__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.reference__item {
+  border: 1px $background-color solid;
+  border-radius: 8px;
+  border-top: none;
+  padding-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.icon__box {
+  display: flex;
+  border-radius: 8px;
+  border-bottom: none;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-top: $background-color;
+  background-color: $icon-background-color;
+  margin-bottom: 30px;
+}
+.reference__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4; /* 22.4px */
+  letter-spacing: 0.16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}

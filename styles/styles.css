@@ -290,12 +290,6 @@ a {
   }
 }
 
-.js-open-menu {
-  position: fixed;
-  top: 10px;
-  right: 15px;
-}
-
 .menu-container {
   position: fixed;
   top: 0;

@@ -383,4 +383,28 @@ a {
   padding-left: 8px;
   padding-right: 8px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.services__image__box {
+  height: 320px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .services__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .services__item {
+    width: calc((100% - 30px) / 2);
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -6,12 +6,37 @@
   }
 }
 .services__image__box {
-  height: 320px;
+  // width: 320px;
+
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    height: 230px;
+  }
+  @media screen and (min-width: 1199px) {
+    height: 374px;
+  }
 }
 .services__image {
+  max-width: 100%;
+}
+.services__description {
+  padding: 10px;
+}
+.services__title {
+  margin-bottom: 8px;
 }
 .services__item {
+  border-radius: 10px;
+  background: #fff;
+
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }

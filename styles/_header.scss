@@ -12,7 +12,7 @@
   margin: 0;
   backdrop-filter: blur(4px);
   background-color: $background-blur;
-  transition: backdrop-filter $anim-slow, background-color $anim-slow;
+
   @media screen and (min-width: 768px) {
   }
 }

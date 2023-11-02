@@ -84,9 +84,6 @@ a {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   background-color: rgba(243, 197, 161, 0.6);
-  transition: background-color 400ms ease-in, -webkit-backdrop-filter 400ms ease-in;
-  transition: backdrop-filter 400ms ease-in, background-color 400ms ease-in;
-  transition: backdrop-filter 400ms ease-in, background-color 400ms ease-in, -webkit-backdrop-filter 400ms ease-in;
 }
 .header__logo {
   margin-left: 20px;

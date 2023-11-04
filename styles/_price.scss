@@ -18,7 +18,19 @@
     padding: 120px 0;
   }
 }
-
+.price__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.price__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 4);
+  }
+}
 .price-block {
   margin-bottom: 44px;
 

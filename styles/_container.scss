@@ -4,7 +4,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
+  padding-bottom: 30px;
   // mobile style
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -16,5 +16,10 @@
   // desctop
   @media screen and (min-width: 1200px) {
     width: 1200px;
+  }
+}
+.section {
+  &:nth-child(2n + 1) {
+    background-color: #fef8ef;
   }
 }

@@ -7,10 +7,12 @@
   }
 }
 .reference__item {
-  border: 1px $background-color solid;
+  color: snow;
+  border: 1px $black-color solid;
+  background-color: $grey-background;
   border-radius: 8px;
-  border-top: none;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
@@ -30,7 +32,7 @@
   border-bottom: none;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  height: 175px;
   border-top: $background-color;
   background-color: $icon-background-color;
   margin-bottom: 30px;

@@ -52,6 +52,7 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -67,6 +68,10 @@ a {
   .container {
     width: 1200px;
   }
+}
+
+.section:nth-child(2n+1) {
+  background-color: #fef8ef;
 }
 
 .header {
@@ -124,6 +129,21 @@ a {
 @media screen and (min-width: 1200px) {
   .price {
     padding: 120px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price__item {
+    width: calc((100% - 30px) / 4);
   }
 }
 
@@ -339,10 +359,12 @@ a {
 }
 
 .reference__item {
-  border: 1px rgb(243, 197, 161) solid;
+  color: snow;
+  border: 1px #000000 solid;
+  background-color: #717070;
   border-radius: 8px;
-  border-top: none;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
 }
 @media screen and (min-width: 768px) {
   .reference__item {
@@ -366,7 +388,7 @@ a {
   border-bottom: none;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  height: 175px;
   border-top: rgb(243, 197, 161);
   background-color: #f4f4f4;
   margin-bottom: 30px;

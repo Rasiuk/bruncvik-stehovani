@@ -19,17 +19,38 @@
   }
 }
 .price__list {
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 90px;
   }
 }
 .price__item {
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 30px) / 4);
+  background-color: antiquewhite;
+  border-radius: 8px;
+  padding-bottom: 16px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 180px) / 3);
+  }
+}
+.price__item__description {
+  padding: 8px;
+}
+.price__item__description__title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.price__title {
+  padding: 8px;
+  text-align: center;
 }
 .price-block {
   margin-bottom: 44px;
@@ -39,7 +60,6 @@
     font-size: 14px;
   }
 
-  // проміжок включає мобільні пристрої і планшети до десктопу
   @media screen and (max-width: 1199px) {
     padding: 32px 40px;
     background-image: linear-gradient(

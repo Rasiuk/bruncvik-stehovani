@@ -2,10 +2,19 @@
   text-align: center;
   font-size: 32px;
   font-style: normal;
+  text-decoration: underline;
   font-weight: 700;
   line-height: 1.4; /* 56px */
   letter-spacing: 0.4px;
   margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.76;
+  letter-spacing: 0.56px;
 }
 
 h1,
@@ -16,7 +25,7 @@ h5,
 h6,
 p,
 ul {
-  font-family: "Roboto Slab", serif;
+  font-family: "Playpen Sans", cursive;
   margin: 0;
   padding: 0;
 }
@@ -140,6 +149,11 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .price__list {
     gap: 90px;
   }
 }
@@ -156,6 +170,11 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
+  .price__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1199px) {
   .price__item {
     width: calc((100% - 180px) / 3);
   }
@@ -175,18 +194,24 @@ a {
   text-align: center;
 }
 
+.ceny__description {
+  margin-bottom: 32px;
+}
+
 .price-block {
+  color: snow;
   margin-bottom: 44px;
+  border-radius: 4px;
 }
 @media screen and (max-width: 767px) {
   .price-block {
-    padding: 30px 40px;
+    padding: 30px 10px;
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1199px) {
   .price-block {
-    padding: 32px 40px;
+    padding: 32px 10px;
     background-image: linear-gradient(180deg, #171a24 0%, rgb(243, 197, 161) 100%);
   }
 }
@@ -198,6 +223,13 @@ a {
   }
 }
 
+.price__item__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.price-list {
+  border-radius: 4px;
+}
 @media screen and (max-width: 1199px) {
   .price-list {
     margin-bottom: 20px;
@@ -216,7 +248,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .price-list:first-child {
-    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    background-image: linear-gradient(180deg, #171a24 0%, rgb(243, 197, 161) 100%);
     transform: rotateY(15deg);
     transform-origin: left center;
   }
@@ -226,7 +258,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .price-list:last-child {
-    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    background-image: linear-gradient(180deg, #171a24 0%, rgb(243, 197, 161) 100%);
     transform: rotateY(-15deg);
     transform-origin: right center;
   }
@@ -240,7 +272,6 @@ a {
   display: flex;
   align-items: baseline;
   gap: 16px;
-  color: var(--grey-cl);
 }
 @media screen and (max-width: 1199px) {
   .price-item:not(:last-child) {
@@ -490,4 +521,8 @@ a {
   .services__item {
     width: calc((100% - 30px) / 2);
   }
+}
+
+.footer {
+  background-color: rgb(243, 197, 161);
 }/*# sourceMappingURL=styles.css.map */

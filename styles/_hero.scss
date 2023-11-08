@@ -1,7 +1,14 @@
 .hero {
   padding-top: 180px;
   padding-bottom: 180px;
-  background-image: url("../img/background-hero.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgb(212 158 103),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/background-hero.jpg);
+  // background-image: url("../img/background-hero.jpg");
+  // background-image: linear-gradient();
   background-position: center;
 }
 .hero__content {
@@ -24,12 +31,24 @@
   letter-spacing: 0.16px;
   margin-bottom: 64px;
 }
+.hero__links {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
 .hero__link {
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  font-weight: 700;
   display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 260px;
+  width: 300px;
+
   padding: 32px;
   border-radius: 8px;
   background-color: $background-color;

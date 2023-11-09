@@ -62,7 +62,8 @@
       <section class="hero">
         <div class="hero__content">
           <h1 class="animate__animated animate__fadeInDown hero__title">
-            <span>Bruncvík </span> Stěhování Autodoprava
+            <span class="hero__title__brand">Bruncvík </span> Stěhování
+            Autodoprava
           </h1>
           <p
             class="hero__uppertitle animate__animated animate__lightSpeedInLeft animate__delay-1s"
@@ -425,9 +426,13 @@
         </section>
       </main>
       <footer class="footer">
-        <div id="kontakty" class="container">
+        <div id="kontakty" class="container footer__container">
           <a class="logo" href="./index.html">
-            <img class="logo__img" src="./img/logistics.png" alt="logo" />
+            <img
+              class="logo__img footer__img"
+              src="./img/logistics.png"
+              alt="logo"
+            />
           </a>
           <address class="address">
             <ul class="address__list list">
@@ -437,31 +442,45 @@
                   href="https://maps.app.goo.gl/yLBcREsxQDsNhzWh7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Brno</a
+                >
+                  <svg class="footer__icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-location"></use>
+                  </svg>
+                  Nálepková 582/54a, 63700 Brno</a
                 >
               </li>
               <li class="address__item">
                 <a
                   class="address__link link"
                   href="mailto:stehovani.bruncvik@gmail.com"
-                  >stehovani.bruncvik@gmail.com</a
+                >
+                  <svg class="footer__icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-envelop"></use>
+                  </svg>
+                  stehovani.bruncvik@gmail.com</a
                 >
               </li>
               <li class="address__item">
                 <a class="address__link link" href="tel:+420606599933"
-                  >+420 606 599 933</a
+                  ><svg class="footer__icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-phone"></use>
+                  </svg>
+                  +420 606 599 933</a
                 >
               </li>
               <li class="address__item">
-                <a class="address__link link" href="tel:+420606599933"
-                  >+420 606 599 933</a
+                <a class="address__link link" href="tel:+420728877055">
+                  <svg class="footer__icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-phone"></use>
+                  </svg>
+                  +420 728 877 055</a
                 >
               </li>
             </ul>
-            <ul>
-              <li>IČO 19712871</li>
-              <li>DIČ CZ 686723167</li>
-              <li>Účet: 328902227/0309</li>
+            <ul class="info__list">
+              <li class="info__item">IČO 19712871</li>
+              <li class="info__item">DIČ CZ 686723167</li>
+              <li class="info__item">Účet: 328902227/0309</li>
             </ul>
           </address>
         </div>

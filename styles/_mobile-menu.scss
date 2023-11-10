@@ -61,3 +61,10 @@
     margin-bottom: 32px;
   }
 }
+.mobile__link {
+  transition: color 200ms linear 0s;
+  &:hover,
+  &:focus {
+    color: rgb(255, 84, 21);
+  }
+}

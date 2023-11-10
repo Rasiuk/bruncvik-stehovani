@@ -438,6 +438,13 @@ a {
   margin-bottom: 32px;
 }
 
+.mobile__link {
+  transition: color 200ms linear 0s;
+}
+.mobile__link:hover, .mobile__link:focus {
+  color: rgb(255, 84, 21);
+}
+
 @media screen and (min-width: 768px) {
   .reference__list {
     display: flex;

@@ -5,10 +5,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .footer__icon {
   margin-right: 8px;
   fill: orangered;
+}
+.logo__footer {
+  margin-bottom: 32px;
 }
 .footer__img {
   width: 120px;
@@ -18,6 +25,7 @@
   margin-bottom: 16px;
 }
 .address__item {
+  display: flex;
   &:not(:last-child) {
     margin-bottom: 16px;
   }

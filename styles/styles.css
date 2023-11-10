@@ -107,6 +107,11 @@ a {
   display: flex;
   gap: 32px;
 }
+@media screen and (min-width: 1199px) {
+  .nav__menu {
+    gap: 120px;
+  }
+}
 
 .logo__img {
   width: 60px;
@@ -119,6 +124,10 @@ a {
   font-weight: 700;
   line-height: 140%; /* 25.2px */
   letter-spacing: 0.18px;
+  transition: color 200ms linear 0s;
+}
+.nav__menu__link:hover, .nav__menu__link:focus {
+  color: rgb(255, 84, 21);
 }
 
 .price {
@@ -211,7 +220,7 @@ a {
 @media screen and (max-width: 1199px) {
   .price-block {
     padding: 32px 10px;
-    background-image: linear-gradient(180deg, #171a24 0%, rgb(243, 197, 161) 100%);
+    background-image: linear-gradient(180deg, #b69a74 0%, rgb(243, 197, 161) 100%);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -292,7 +301,7 @@ a {
   display: block;
   height: 1px;
   flex-grow: 1;
-  background-color: rgba(157, 164, 189, 0.12);
+  background-color: rgba(3, 3, 3, 0.269);
 }
 
 .price-item-serv {
@@ -553,10 +562,20 @@ a {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .footer__icon {
   margin-right: 8px;
   fill: orangered;
+}
+
+.logo__footer {
+  margin-bottom: 32px;
 }
 
 .footer__img {
@@ -568,6 +587,9 @@ a {
   margin-bottom: 16px;
 }
 
+.address__item {
+  display: flex;
+}
 .address__item:not(:last-child) {
   margin-bottom: 16px;
 }
